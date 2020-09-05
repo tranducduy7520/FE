@@ -1,7 +1,0 @@
-7.30 9.00 Train00 Station00
-8.30 10.00 Train01 Station01
-13.30 17.00 Train02 Station02
-3.30 6.00 Train03 Station03
-5.30 8.00 Train04 Station04
-15.30 20.00 Train05 Station05
-19.30 22.00 Train06 Station06
