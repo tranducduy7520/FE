@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Anh",
+        "phoneNumber": "0864654985"
+    },
+    {
+        "name": "Cuong",
+        "phoneNumber": "0549651489",
+        "age": "15"
+    },
+    {
+        "name": "Hung",
+        "phoneNumber": "05649856564"
+    },
+    {
+        "name": "Peter",
+        "phoneNumber": "05498566512"
+    },
+    {
+        "name": "Duy",
+        "phoneNumber": "06549856511"
+    }
+]
