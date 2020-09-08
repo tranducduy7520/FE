@@ -6,15 +6,23 @@ var action = {
     }
 }
 
+
 var onWaiting = function () {
     setTimeout(function () { console.log("Waiting...") }, 1000);
-    setTimeout(function () { console.log(3) }, 2000);
-    setTimeout(function () { console.log(2) }, 3000);
-    setTimeout(function () { console.log(1) }, 4000);
+    var countdown = 5;
+    setInterval(function () {
+        if (countdown > 0) {
+            console.log(countdown);
+            countdown--;
+        } else {
+            clearInterval(this);
+        }
+    }, 1000);
 }
 
 var onStart = function () {
-    setTimeout(function () { console.log("Start!!!")},4100);
+    var timeoutStartId = setTimeout(function () { console.log("Start!!!") }, 10000);
+    clearTimeout(timeoutStartId);
 }
 
 action.act(onWaiting, onStart);

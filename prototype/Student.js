@@ -1,6 +1,6 @@
-function Student() {
-    this.name = 'NO NAME',
-    this.age = 0,
+function Student(name, age) {
+    this.name = name,
+    this.age = age,
     this.externalInfo = null
 }
 
