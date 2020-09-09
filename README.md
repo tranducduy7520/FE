@@ -1,4 +1,4 @@
-# Javascript Tutorial
+# JavaScript Tutorial
 Welcome to JavaScript Tutorial!
 ## Introduction
 - JavaScript is the world's most popular programming language.

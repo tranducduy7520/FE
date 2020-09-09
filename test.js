@@ -1,10 +1,6 @@
-var a = [
-    {
-        x: 1,
-        age: 2
-    }
-]
-var b = a.filter( function(value) {
-    return value.x === 1;
-})
-console.log(b[0].age);
+function newString(str, n) {
+    // viết code ở đây.
+    var arr = str.split('');
+    arr.splice(n, arr.length - 2 * n);
+    return arr.join('');
+}
