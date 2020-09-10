@@ -1,16 +1,17 @@
-git init
-git add .
-git status
-git commit -m
-git log 
-git show
-git diff
-git checkout --
-git reset
-git checkout -b
-git checkout = git switch
-git merge
-git branch -d
-git reset --soft
-git reset --mixed
-git reset --hard
+git init                                                // initialize git
+git add .                                               // add files
+git status                                              // show status of files
+git commit -m "commit"                                  // commit
+git log                                                 // show commit logs
+git show <id-commit>                                    // show a log
+git diff                                                // show difference
+git checkout -- <file>                                  // Return changed = Ctrl + Z
+git reset <branch> = git reset --mixed <branch>         // delete commit and unpack
+git checkout -b <branch>                                // create and switch to new branch
+git checkout <branch> = git switch <branch>             // switch to branch
+git merge <sub-branch>                                  // merge sub-branch to current branch
+git branch -d <branch>                                  // delete branch
+git reset --soft <branch>                               // delete commit
+git reset --hard <branch>                               // delete changed
+git revert <id-commit>                                  // revert commit (+ => -)
+.gitignore                                              // ignore files
