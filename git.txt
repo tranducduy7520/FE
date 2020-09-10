@@ -1,0 +1,16 @@
+git init
+git add .
+git status
+git commit -m
+git log 
+git show
+git diff
+git checkout --
+git reset
+git checkout -b
+git checkout = git switch
+git merge
+git branch -d
+git reset --soft
+git reset --mixed
+git reset --hard
