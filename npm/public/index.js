@@ -6,6 +6,9 @@ var items = [
 var btnAdd = document.getElementById('button-add');
 var btnReset = document.getElementById('button-reset');
 
+var ageFilter = document.getElementById('age-filter');
+var studentTable = document.getElementById('student-table');
+
 //add first date
 list.innerHTML = items.join('');
 //trigger a event after click button
@@ -23,7 +26,7 @@ function addItem() {
     if (item !== '') {
         items.push('<li>' + item + '</li>');
         localStorage.setItem('list', JSON.stringify(items));
-        list.innerHTML = localStorage.getItem('list');
+        list.innerHTML = JSON.parse(localStorage.getItem('list')).join('');
         // the same with sessionStorage        
         txtInput.value = '';
     }
@@ -33,8 +36,6 @@ function clearList() {
     list.innerHTML = items;
 }
 
-var ageFilter = document.getElementById('age-filter');
-var studentTable = document.getElementById('student-table');
 
 var students = [
     {
@@ -59,14 +60,13 @@ var students = [
     }
 ];
 render(students);
-
 function render(students) {
     var out = students.map(function (student) {
         return '<tr><td>' + student.name + '</td><td>' + student.age + '</td></tr>';
     })
-    console.log(out);
-    studentTable.innerHTML = out.join('');
+    studentTable.innerHTML = out;
 }
+
 
 ageFilter.addEventListener("change", function () {
     var valueSelected = ageFilter.value;
@@ -74,8 +74,22 @@ ageFilter.addEventListener("change", function () {
         render(students);
         return;
     }
-    var out = students.filter(function (student) {
+    var studentFilter = students.filter(function (student) {
         return student.age === parseInt(valueSelected);
     });
-    render(out);
+    render(studentFilter);
+})
+
+
+var content = document.getElementById('content');
+var url = 'http://localhost:3000/students';
+axios.get(url).then(function (response) {
+    var items = response.data;
+    // console.log(response.data);
+    var out = items.map(function (data) {
+        return data.name + ' ' + data.age;
+    })
+    content.innerHTML = out.join('<br />');
+}).catch(function (err) {
+    console.log(err.data);
 })
