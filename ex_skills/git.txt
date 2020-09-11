@@ -15,3 +15,8 @@ git reset --soft <branch>                               // delete commit
 git reset --hard <branch>                               // delete changed
 git revert <id-commit>                                  // revert commit (+ => -)
 .gitignore                                              // ignore files
+git fetch origin https://                               // get a branch to local
+git rebase master                                       // resolve conflict using rebase                  
+git rebase --continue                                   // rebase delete commits
+git push add <branch> -f                                // avoid push -f to general branch as master
+git merge master                                        // resolve conflict using merge

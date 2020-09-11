@@ -1,0 +1,20 @@
+- UI Design Tools: Sketch (macOS), Adobe XD, Figma
+- Color type: Solid, Linear Gradient, Radial Gradient, Angular Gradient
+- Color palette: coolors.co
+- Font type: serif | sans-serif, non-Unicode | Unicode, dafont.com, fonts.google.com
+- Icon fonts: fontawesome.com, material design iconic font, icomoon.io
+- SVG icons: ionicons.com, flaticon.com, materialdesignicons.com
+- Border, padding (inner spacing), margin (outer spacing)
+- Blur = duplicate background + increase opacity + mask
+- Shadow: X, Y, Blur, Spreading
+- Reusability: create symbol
+- Bitmap (jpeg (white bg), png) vs Vector (SVG)
+- 12 columns grid layout
+- Craft: sync Sketch
+- InvisionApp: github of designer
+- Instagram: #ui
+- behance.net, dribble.com: "web design"
+- themeforest.net: WordPress -> Corporate, eCommerce -> OpenCart
+- goodui.org: best-practices in design
+
+"Design is not just what it looks like and how it feels. Design is how it works" - Steve Jobs
