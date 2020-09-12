@@ -6,9 +6,6 @@ var items = [
 var btnAdd = document.getElementById('button-add');
 var btnReset = document.getElementById('button-reset');
 
-var ageFilter = document.getElementById('age-filter');
-var studentTable = document.getElementById('student-table');
-
 //add first date
 list.innerHTML = items.join('');
 //trigger a event after click button
@@ -36,6 +33,8 @@ function clearList() {
     list.innerHTML = items;
 }
 
+var ageFilter = document.getElementById('age-filter');
+var studentTable = document.getElementById('student-table');
 
 var students = [
     {
@@ -60,13 +59,14 @@ var students = [
     }
 ];
 render(students);
+
 function render(students) {
     var out = students.map(function (student) {
         return '<tr><td>' + student.name + '</td><td>' + student.age + '</td></tr>';
     })
-    studentTable.innerHTML = out;
+    console.log(out);
+    studentTable.innerHTML = out.join('');
 }
-
 
 ageFilter.addEventListener("change", function () {
     var valueSelected = ageFilter.value;
@@ -74,22 +74,8 @@ ageFilter.addEventListener("change", function () {
         render(students);
         return;
     }
-    var studentFilter = students.filter(function (student) {
+    var out = students.filter(function (student) {
         return student.age === parseInt(valueSelected);
     });
-    render(studentFilter);
-})
-
-
-var content = document.getElementById('content');
-var url = 'http://localhost:3000/students';
-axios.get(url).then(function (response) {
-    var items = response.data;
-    // console.log(response.data);
-    var out = items.map(function (data) {
-        return data.name + ' ' + data.age;
-    })
-    content.innerHTML = out.join('<br />');
-}).catch(function (err) {
-    console.log(err.data);
+    render(out);
 })

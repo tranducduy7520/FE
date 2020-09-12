@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+p {
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+}
+.paragraph {
+    background: rgb(249,249,47);    /*fallback*/
+    background: linear-gradient(90deg, rgba(249,249,47,1) 35%, rgba(255,248,0,0.8219373219373219) 100%);
+    /* background-color: #ffa; */
+    /* border: 2px solid #f00; */
+    border-radius: 15px;
+    padding: 10px 30px 10px;
+    color: #000;
+    text-indent: 20px;
+    font-style: italic;
+    /* letter-spacing: 2px;
+    word-spacing: 10px;
+    line-height: 30px; */
+    /* text-shadow: 5px 5px 10px #777; */
+}
+.link {
+    color: rgba(9, 93, 219, 0.75);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content {
+    font-size: 30px;
+    text-align: center;
+    color: #f09;
+    font-weight: bold;
+}
+
+#age-filter {
+    margin-bottom: 10px;
+}
+
+.image-title {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    padding: 12px 15px;
+}
+
+.image1 {
+    margin: 30px;
+    background-image: url(./binh-minh-huyen-dieu.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    /* background-size: cover;
+    background-position: 0 -200; */
+    background-size: contain;
+    background-attachment: fixed;
+}
+.image2 {
+    margin: 30px;
+    background-image: url(./binh-minh-ao-dieu.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    /* background-size: cover;
+    background-position: 0 -200; */
+    background-size: contain;
+    background-attachment: fixed;
+}
+.image3 {
+    margin: 30px;
+    margin-left: 150px;
+    background-image: url(./binh-minh-tuyet.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    /* background-size: cover;
+    background-position: 0 -200; */
+    background-size: contain;
+    background-attachment: fixed;
+}
+
