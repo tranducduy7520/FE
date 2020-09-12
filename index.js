@@ -23,7 +23,7 @@ function addItem() {
     if (item !== '') {
         items.push('<li>' + item + '</li>');
         localStorage.setItem('list', JSON.stringify(items));
-        list.innerHTML = localStorage.getItem('list');
+        list.innerHTML = JSON.parse(localStorage.getItem('list')).join('');
         // the same with sessionStorage        
         txtInput.value = '';
     }

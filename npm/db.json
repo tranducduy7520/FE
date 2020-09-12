@@ -1,27 +1,29 @@
-[
-    {
-        "id": 1,
-        "name": "John",
-        "age": 18
-    },
-    {
-        "id": 2,
-        "name": "Peter",
-        "age": 20
-    },
-    {
-        "id": 3,
-        "name": "Marry",
-        "age": 17
-    },
-    {
-        "id": 4,
-        "name": "Jack",
-        "age": 19
-    },
-    {
-        "id": 5,
-        "name": "Michael",
-        "age": 18
-    }
-]
+{
+    "students": [
+        {
+            "id": 1,
+            "name": "John",
+            "age": 18
+        },
+        {
+            "id": 2,
+            "name": "Peter",
+            "age": 20
+        },
+        {
+            "id": 3,
+            "name": "Marry",
+            "age": 17
+        },
+        {
+            "id": 4,
+            "name": "Jack",
+            "age": 19
+        },
+        {
+            "id": 5,
+            "name": "Michael",
+            "age": 18
+        }
+    ]
+}

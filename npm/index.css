@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+p {
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+}
+.paragraph {
+    background: rgb(249,249,47);    /*fallback*/
+    background: linear-gradient(90deg, rgba(249,249,47,1) 35%, rgba(255,248,0,0.8219373219373219) 100%);
+    /* background-color: #ffa; */
+    /* border: 2px solid #f00; */
+    border-radius: 15px;
+    padding: 10px 30px 10px;
+    color: #000;
+    text-indent: 20px;
+    font-style: italic;
+    /* letter-spacing: 2px;
+    word-spacing: 10px;
+    line-height: 30px; */
+    /* text-shadow: 5px 5px 10px #777; */
+}
+
+
+.content {
+    font-size: 30px;
+    text-align: center;
+    color: #f09;
+    font-weight: bold;
+}
+
+#age-filter {
+    margin-bottom: 10px;
+}
+
+.image-title {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    padding: 12px 15px;
+}
+
+.image1 {
+    margin: 30px;
+    background-image: url(./binh-minh-huyen-dieu.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    /* background-size: cover;
+    background-position: 0 -200; */
+    background-size: contain;
+    background-attachment: fixed;
+}
+.image2 {
+    margin: 30px;
+    background-image: url(./binh-minh-ao-dieu.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    /* background-size: cover;
+    background-position: 0 -200; */
+    background-size: contain;
+    background-attachment: fixed;
+}
+.image3 {
+    margin: 30px;
+    margin-left: 150px;
+    background-image: url(./binh-minh-tuyet.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    /* background-size: cover;
+    background-position: 0 -200; */
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.icon {
+    margin-left: 710px;
+}
+
+.link {
+    margin-left: 683px; 
+    color: #08f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+/* .link:visited {
+    color: #ff0
+} */
+.link:hover {
+    text-decoration: under;
+    color: #00f;
+}
+.link:active {
+    color:#f75;
+}
+
+.combinators {
+    margin-left: 700px;
+}
+.list-1 > .item {
+    border: 1px solid #333;
+}
+
+.list-2 .item-1 + .item {
+    border: 1px solid #333;
+}
+
+body {
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* height: 300px; */
+    background: #aaa;
+    /* align-items: stretch; */
+}
+.child-1 {
+    background-color: #f00;
+    flex-basis: 350px;
+    flex-grow: 1;
+    flex-shrink: 0; /*not shirnk*/
+}
+
+.child-2 {
+    background-color: #0f0;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.child-3 {
+    background-color: #00f;
+    flex-basis: 150px;
+    flex-grow: 1;
+}
+
+.container-swap .child-1 {
+    order: 1; /*swap child-1 to end cause child-2 & child-3 has order = 0*/
+}
+
+/* flexBasis * ( 1 + shrinkFactor / sumScaleShrinkFactor * remainingFreeSpace )
