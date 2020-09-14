@@ -26,13 +26,6 @@ axios.put(url + '/1', item).then(function (res) {
     console.log(err);
 })
 
-//PATCH - cập nhật object
-axios.patch(url + '/3', item).then(function (res) {
-    console.log(res.data);
-}).catch(function (err) {
-    console.log(err);
-})
-
 //DELETE - xóa object
 axios.delete(url + '/2').then(function (res) {
     console.log(res.data);
@@ -40,3 +33,9 @@ axios.delete(url + '/2').then(function (res) {
     console.log(err);
 })
 
+//PATCH - cập nhật object
+axios.patch(url + '/3', item).then(function (res) {
+    console.log(res.data);
+}).catch(function (err) {
+    console.log(err);
+})
