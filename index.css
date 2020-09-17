@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 p {
     font-family: Roboto, sans-serif;
     font-size: 17px;
 }
+
 .paragraph {
-    background: rgb(249,249,47);    /*fallback*/
-    background: linear-gradient(90deg, rgba(249,249,47,1) 35%, rgba(255,248,0,0.8219373219373219) 100%);
+    background: rgb(249, 249, 47);
+    /*fallback*/
+    background: linear-gradient(90deg, rgba(249, 249, 47, 1) 35%, rgba(255, 248, 0, 0.8219373219373219) 100%);
     /* background-color: #ffa; */
     /* border: 2px solid #f00; */
     border-radius: 15px;
@@ -17,7 +20,7 @@ p {
     word-spacing: 10px;
     line-height: 30px; */
     /* text-shadow: 5px 5px 10px #777; */
-    
+
 }
 
 
@@ -49,6 +52,7 @@ p {
     background-size: contain;
     background-attachment: fixed;
 }
+
 .image2 {
     margin: 30px;
     background-image: url(./binh-minh-ao-dieu.jpg);
@@ -59,6 +63,7 @@ p {
     background-size: contain;
     background-attachment: fixed;
 }
+
 .image3 {
     margin: 30px;
     margin-left: 150px;
@@ -76,12 +81,13 @@ p {
 }
 
 .link {
-    margin-left: 683px; 
+    margin-left: 683px;
     color: #08f;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 25px;
 }
+
 /* .link:visited {
     color: #ff0
 } */
@@ -89,24 +95,27 @@ p {
     text-decoration: under;
     color: #00f;
 }
+
 .link:active {
-    color:#f75;
+    color: #f75;
 }
 
 .combinators {
     margin-left: 700px;
 }
-.list-1 > .item {
+
+.list-1>.item {
     border: 1px solid #333;
 }
 
-.list-2 .item-1 + .item {
+.list-2 .item-1+.item {
     border: 1px solid #333;
 }
 
 body {
     margin: 0;
 }
+
 .container {
     display: flex;
     flex-direction: row;
@@ -115,11 +124,13 @@ body {
     background: #aaa;
     /* align-items: stretch; */
 }
+
 .child-1 {
     background-color: #f00;
     flex-basis: 350px;
     flex-grow: 1;
-    flex-shrink: 0; /*not shirnk*/
+    flex-shrink: 0;
+    /*not shirnk*/
 }
 
 .child-2 {
@@ -135,7 +146,8 @@ body {
 }
 
 .container-swap .child-1 {
-    order: 1; /*swap child-1 to end cause child-2 & child-3 has order = 0*/
+    order: 1;
+    /*swap child-1 to end cause child-2 & child-3 has order = 0*/
 }
 
 /* flexBasis * ( 1 + shrinkFactor / sumScaleShrinkFactor * remainingFreeSpace )
