@@ -33,7 +33,7 @@ function foo() {
 }
 console.log(a);   //var -> not block scope
 ```
-### this keyword
+### 'this'
 ```
 var a = {
     foo: 'bar',
