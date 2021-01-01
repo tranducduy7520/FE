@@ -5,7 +5,7 @@ git commit -m "commit"                                  // commit
 git log                                                 // show commit logs
 git show <id-commit>                                    // show a log
 git diff                                                // show difference
-git checkout -- <file>                                  // Return changed = Ctrl + Z
+git checkout -- <file>                                  // Undo changed
 git reset <branch> = git reset --mixed <branch>         // delete commit and unpack
 git checkout -b <branch>                                // create and switch to new branch
 git checkout <branch> = git switch <branch>             // switch to branch

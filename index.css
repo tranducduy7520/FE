@@ -91,6 +91,7 @@ p {
 /* .link:visited {
     color: #ff0
 } */
+
 .link:hover {
     text-decoration: under;
     color: #00f;
