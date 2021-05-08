@@ -1,13 +1,15 @@
 docker images
 docker ps
-docker pull [REPOSITORY]
-docker rm [REPOSITORY]
-docker run -it --name [NAME] -h [HOST] [REPOSITORY]    //i: interactive, t: terminal
-docker start [ID/NAME]
-docker save --output myimage.tar [REPOSITORY]
+docker pull REPOSITORY
+docker rm REPOSITORY
+docker run -it --name NAME -h HOST REPOSITORY    //i: interactive, t: terminal  // -d: detach
+docker start [CONTAINER]
+docker commit CONTAINER REPOSITORY:TAG
+docker save --output myimage.tar REPOSITORY
 docker load -i myimage.tar
 docker tag f newimage:version2
-docker attach [REPOSITORY]
+docker attach REPOSITORY
 docker pull busybox
 docker network ls
-docker network inspect [NAME]
+docker network inspect CONTAINER
+^P ^Q

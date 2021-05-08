@@ -1,0 +1,23 @@
+ls -lSh 	= lists long Sort human can read
+pwd		= print working directory
+du		= disk used by file
+df		= disk used by file system
+cat files...	= concatenate
+head|tail -number
+more		= display more
+less		= like more but powerful
+wc [-l|-w|-c]	= word count (lines, words, characters)
+grep "Regex"	= global regular expression print
+cut -d " " -f1	= delimiter field 1
+tr		= translate
+sort -k1,3 -r -n = sort from 1 to 3 reverse number, > = overwrite, >> = append
+free -g	= display memory gigabyte
+top		= show process
+ps		= provide snapshot process
+nice		= modified scheduleing priority
+
+### Vim
+I		= Insert
+wq		= write & quit
+
+
